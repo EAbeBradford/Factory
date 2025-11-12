@@ -1,4 +1,5 @@
-public class Factory {
+public class Factory {//tic toc
+
 
     //make a varible called yearFounded that is an integer
     //instance varibales at the top of class, they can be seen by every class
@@ -14,6 +15,9 @@ public class Factory {
     }
 
     //constructor
+    //1. is a method
+    //2. has same name as class
+    //3. no void
     public Factory(){
         isOpen = false;
         //scope for manger is only in the constructory
@@ -23,6 +27,27 @@ public class Factory {
 
         //todo: change the varible yearfounded to be a different value
         //call factoryInfo(); agian
+
+        //type varName = value
+        //object of type airplaine
+
+        Airplaine plane1  = new Airplaine();
+        //plane1.name = "jeff";
+        System.out.println(plane1.name);
+        //todo: give all of plane1's instance vars values
+        plane1.capacity = 615;
+        plane1.isDoubleDeacker = true;
+        plane1.length = 70;
+        plane1.model = "b1 b lancer";
+        System.out.println(plane1.model);
+        Airplaine plane2 = new Airplaine();
+
+        System.out.println(plane2.capacity);
+        plane2.capacity = 615;
+        //hw: make 2 more airplane objects
+        //for one of the objects change all the instance variable
+        //for both objects print all the instance variables
+
     }
 
     //make a method called factoryInfo,nothing should be in the method.
