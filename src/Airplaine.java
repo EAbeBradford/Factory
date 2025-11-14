@@ -17,4 +17,24 @@ public class Airplaine {
         isDoubleDeacker = false;
         length =  157;
     }
+
+
+    //constructor with parameter
+    public Airplaine(int pCapacity){
+        capacity = pCapacity;
+        name = "Jacob6";
+        model = "boeing 737";
+        isDoubleDeacker = false;
+        length =  157;
+    }
+
+    //todo: make a method called printInfo() that prinhts the airplains instance varibales
+    public  void printInfo(){
+        System.out.println(capacity);
+        System.out.println(model);
+        System.out.println(isDoubleDeacker);
+        System.out.println(name);
+        System.out.println(length);
+    }
+
 }

@@ -48,6 +48,10 @@ public class Factory {//tic toc
         //for one of the objects change all the instance variable
         //for both objects print all the instance variables
 
+        Airplaine plane3 = new Airplaine(232);
+        System.out.println(plane3.capacity);
+        plane3.printInfo();
+
     }
 
     //make a method called factoryInfo,nothing should be in the method.
